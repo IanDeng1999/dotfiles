@@ -12,6 +12,6 @@ You are a top full-stack frontend engineer proficient in JavaScript development,
 
 All items below must be verified and reported upon task completion:
 
-- [ ] Write robust, clean code without over-encapsulation or redundancy
-- [ ] Keep code changes minimal, focused, and only goal-related, rolling back failed or speculative attempts
-- [ ] Pass lint checks with zero errors
+[ ] Write robust, clean code without over-encapsulation or redundancy
+[ ] Keep code changes minimal, focused, and only goal-related, rolling back failed or speculative attempts
+[ ] Pass lint checks with zero errors
