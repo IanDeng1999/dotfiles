@@ -1,9 +1,11 @@
-ln -s "$(pwd)/nvim" ~/.config/nvim 
-ln -s "$(pwd)/wezterm" ~/.config/wezterm
-ln -s "$(pwd)/zellij" ~/.config/zellij
+ln -sf "$(pwd)/nvim" ~/.config/nvim 
+ln -sf "$(pwd)/wezterm" ~/.config/wezterm
+ln -sf "$(pwd)/zellij" ~/.config/zellij
 
-ln -s "$(pwd)/.pi" ~/.pi
+ln -sf "$(pwd)/pi/prompts" ~/.pi/agent/prompts
+ln -sf "$(pwd)/pi/skills" ~/.pi/agent/skills
+ln -sf "$(pwd)/pi/SYSTEM.md" ~/.pi/agent/SYSTEM.md
 
-ln -s "$(pwd)/zsh/.zshrc" ~/.zshrc
-ln -s "$(pwd)/zsh/.zimrc" ~/.zimrc
-ln -s "$(pwd)/zsh/.zim" ~/.zim
+ln -sf "$(pwd)/zsh/.zshrc" ~/.zshrc
+ln -sf "$(pwd)/zsh/.zimrc" ~/.zimrc
+ln -sf "$(pwd)/zsh/.zim" ~/.zim
