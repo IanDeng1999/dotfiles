@@ -3,14 +3,6 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
--- 检测 macOS
-local is_macos = wezterm.target_triple:find("darwin") ~= nil
-
--- 根据操作系统选择修饰键
-local function ctrl_or_super()
-    return is_macos and "SUPER" or "CTRL"
-end
-
 -------------------- 颜色配置 --------------------
 
 -- config.color_scheme = 'Aurora'
@@ -39,29 +31,23 @@ config.initial_rows = 20
 -------------------- 键盘绑定 --------------------
 
 -- 关闭默认键位
-config.disable_default_key_bindings = true
+config.disable_default_key_bindings = false
 
 local act = wezterm.action
 
 config.leader = {
     key = ';',
-    mods = ctrl_or_super(),
+    mods = 'CTRL',
     timeout_milliseconds = 1000
 }
 
 config.keys = {{
     key = 'c',
-    mods = ctrl_or_super() .. '|SHIFT',
+    mods = 'CTRL|SHIFT',
     action = act.CopyTo("Clipboard")
 }, {
-    key = 'r',
-    mods = 'SUPER',
-    action = act.SplitVertical {
-        domain = 'CurrentPaneDomain'
-    }
-}, {
     key = 'v',
-    mods = ctrl_or_super() .. '|SHIFT',
+    mods = 'CTRL|SHIFT',
     action = act.PasteFrom("Clipboard")
 }, {
     key = 'w',
@@ -70,16 +56,6 @@ config.keys = {{
         confirm = false
     }
 }}
-
-for i = 1, 8 do
-    -- CTRL + number to activate that tab
-    table.insert(config.keys, {
-        key = tostring(i),
-        mods = ctrl_or_super(),
-        action = act.ActivateTab(i - 1)
-    })
-
-end
 
 -------------------- 鼠标绑定 --------------------
 
@@ -100,7 +76,7 @@ config.mouse_bindings = {{
             button = 'Left'
         }
     },
-    mods = ctrl_or_super(),
+    mods = 'CTRL',
     action = act.OpenLinkAtMouseCursor
 }}
 
