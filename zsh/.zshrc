@@ -117,12 +117,15 @@ source ${ZIM_HOME}/init.zsh
 
 
 export PATH=$HOME/.local/bin:$PATH
+export EDITOR=nvim
 
 # Disable x-cmd advise to prevent interference with zim completion
 [ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
 
 eval "$(fnm env --use-on-cd --shell zsh)"
 alias z="zellij a awesome"
+alias vi="nvim"
+alias vim="nvim"
 
 # Background tasks on startup (silent)
 npm install -g @mariozechner/pi-coding-agent &>/dev/null &!
