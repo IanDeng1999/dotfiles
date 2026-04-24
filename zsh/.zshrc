@@ -122,7 +122,7 @@ export EDITOR=nvim
 # Disable x-cmd advise to prevent interference with zim completion
 [ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
 
-eval "$(fnm env --use-on-cd --shell zsh)"
+# eval "$(fnm env --use-on-cd --shell zsh)"
 alias z="zellij a awesome"
 alias vi="nvim"
 alias vim="nvim"
@@ -133,3 +133,10 @@ brew update &>/dev/null &!
 kinit dengguiyang@BYTEDANCE.COM &>/dev/null &!
 
 alias k="kinit dengguiyang@BYTEDANCE.COM"
+
+# fnm
+FNM_PATH="/home/iovitz/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "$(fnm env --shell zsh)"
+fi
