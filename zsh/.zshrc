@@ -123,7 +123,7 @@ export EDITOR=nvim
 [ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
 
 # eval "$(fnm env --use-on-cd --shell zsh)"
-alias z="zellij a awesome"
+alias z="zellij a -c awesome"
 alias vi="nvim"
 alias vim="nvim"
 
