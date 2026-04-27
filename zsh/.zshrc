@@ -127,6 +127,8 @@ alias z="zellij a -c awesome"
 alias vi="nvim"
 alias vim="nvim"
 
+export EDITOR=nvim
+
 # Background tasks on startup (silent)
 npm install -g @mariozechner/pi-coding-agent &>/dev/null &!
 brew update &>/dev/null &!
