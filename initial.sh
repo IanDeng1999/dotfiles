@@ -8,4 +8,3 @@ ln -sf "$(pwd)/.pi/SYSTEM.md" ~/.pi/agent
 
 ln -sf "$(pwd)/zsh/.zshrc" ~
 ln -sf "$(pwd)/zsh/.zimrc" ~
-ln -sf "$(pwd)/zsh/.zim" ~
