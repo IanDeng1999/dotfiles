@@ -137,8 +137,4 @@ kinit dengguiyang@BYTEDANCE.COM &>/dev/null &!
 alias k="kinit dengguiyang@BYTEDANCE.COM"
 
 # fnm
-FNM_PATH="/home/iovitz/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="$FNM_PATH:$PATH"
-  eval "$(fnm env --shell zsh)"
-fi
+eval "$(fnm env --use-on-cd --shell zsh)"
