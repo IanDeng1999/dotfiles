@@ -129,6 +129,9 @@ alias vim="nvim"
 
 export EDITOR=nvim
 
+# Proxy
+# socat TCP-LISTEN:3001,bind=127.0.0.1,fork TCP:x.x.x.x:3001
+
 # Background tasks on startup (silent)
 npm install -g @mariozechner/pi-coding-agent &>/dev/null &!
 brew update &>/dev/null &!
@@ -138,3 +141,10 @@ alias k="kinit dengguiyang@BYTEDANCE.COM"
 
 # fnm
 eval "$(fnm env --use-on-cd --shell zsh)"
+
+# Added by coco installer
+export PATH="/Users/bytedance/.local/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
