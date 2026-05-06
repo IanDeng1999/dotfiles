@@ -148,3 +148,8 @@ export PATH="/Users/bytedance/.local/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Load additional zshrc from home directory if exists
+if [[ -f ~/._zshrc ]]; then
+  source ~/._zshrc
+fi
