@@ -6,5 +6,9 @@ ln -sf "$(pwd)/.agents" ~
 ln -sf "$(pwd)/.pi/prompts" ~/.pi/agent
 ln -sf "$(pwd)/.pi/SYSTEM.md" ~/.pi/agent
 
-ln -sf "$(pwd)/zsh/.zshrc" ~
-ln -sf "$(pwd)/zsh/.zimrc" ~
+ln -sf "$(pwd)/zsh/.myzshrc" ~
+cat >> ~/.zshrc << 'EOF'
+if [[ -f ~/.myzshrc ]]; then
+  source ~/.myzshrc
+fi
+EOF

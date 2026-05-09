@@ -1,0 +1,40 @@
+# Proxy
+# socat TCP-LISTEN:3001,bind=127.0.0.1,fork TCP:x.x.x.x:3001
+
+# Background tasks on startup (silent)
+npm install -g @mariozechner/pi-coding-agent &>/dev/null &!
+brew update &>/dev/null &!
+kinit dengguiyang@BYTEDANCE.COM &>/dev/null &!
+
+alias zd="zellij a -c default"
+alias v="nvim"
+alias zx="zoxide"
+
+if ! command -v x &> /dev/null; then
+  echo "未找到 x-cmd 命令，正在自动安装..."
+  eval "$(curl https://get.x-cmd.com)"
+fi
+
+AUTO_INSTALL_X_CMDS=(
+    zellij
+    zoxide
+    yazi
+    lazygit
+)
+
+install_missing_apps() {
+    local missing=()
+    for app in "${AUTO_INSTALL_X_CMDS[@]}"; do
+        if ! command -v "$app" &> /dev/null; then
+            missing+=("$app")
+        fi
+    done
+
+    if [ ${#missing[@]} -gt 0 ]; then
+        echo "Missing tools: ${missing[*]}"
+        echo "Installing..."
+        x pkg use "${missing[@]}"
+    fi
+}
+
+install_missing_apps
