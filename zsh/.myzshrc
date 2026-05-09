@@ -6,8 +6,9 @@ npm install -g @mariozechner/pi-coding-agent &>/dev/null &!
 brew update &>/dev/null &!
 kinit dengguiyang@BYTEDANCE.COM &>/dev/null &!
 
+alias vi="nvim"
+alias vim="nvim"
 alias zd="zellij a -c default"
-alias v="nvim"
 alias zx="zoxide"
 
 if ! command -v x &> /dev/null; then
@@ -20,6 +21,7 @@ AUTO_INSTALL_X_CMDS=(
     zoxide
     yazi
     lazygit
+    fzf
 )
 
 install_missing_apps() {
