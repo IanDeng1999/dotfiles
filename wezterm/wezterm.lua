@@ -48,7 +48,7 @@ config.keys = {{
 }, {
     key = 'r',
     mods = 'LEADER',
-    action = act.SplitVertical {
+    action = act.SplitHorizontal {
         domain = 'CurrentPaneDomain'
     }
 }, {
