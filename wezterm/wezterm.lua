@@ -46,6 +46,18 @@ config.keys = {{
     mods = 'CTRL|SHIFT',
     action = act.CopyTo("Clipboard")
 }, {
+    key = 'r',
+    mods = 'LEADER',
+    action = act.SplitVertical {
+        domain = 'CurrentPaneDomain'
+    }
+}, {
+    key = 'd',
+    mods = 'LEADER',
+    action = act.SplitVertical {
+        domain = 'CurrentPaneDomain'
+    }
+}, {
     key = 'v',
     mods = 'CTRL|SHIFT',
     action = act.PasteFrom("Clipboard")
