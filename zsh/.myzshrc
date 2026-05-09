@@ -4,7 +4,6 @@
 # Background tasks on startup (silent)
 npm install -g @mariozechner/pi-coding-agent &>/dev/null &!
 brew update &>/dev/null &!
-kinit dengguiyang@BYTEDANCE.COM &>/dev/null &!
 
 # alias vi="nvim"
 alias vim="nvim"
