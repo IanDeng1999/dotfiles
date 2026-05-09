@@ -6,7 +6,7 @@ npm install -g @mariozechner/pi-coding-agent &>/dev/null &!
 brew update &>/dev/null &!
 kinit dengguiyang@BYTEDANCE.COM &>/dev/null &!
 
-alias vi="nvim"
+# alias vi="nvim"
 alias vim="nvim"
 alias zd="zellij a -c default"
 alias zx="zoxide"
@@ -35,7 +35,7 @@ install_missing_apps() {
     if [ ${#missing[@]} -gt 0 ]; then
         echo "Missing tools: ${missing[*]}"
         echo "Installing..."
-        x pkg use "${missing[@]}"
+        x env use "${missing[@]}"
     fi
 }
 
