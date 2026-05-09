@@ -11,6 +11,8 @@ alias vim="nvim"
 alias zd="zellij a -c default"
 alias zx="zoxide"
 
+export EDITOR=vim
+
 if ! command -v x &> /dev/null; then
   echo "未找到 x-cmd 命令，正在自动安装..."
   eval "$(curl https://get.x-cmd.com)"
