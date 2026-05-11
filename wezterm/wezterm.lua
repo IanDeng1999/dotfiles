@@ -31,7 +31,7 @@ config.initial_rows = 20
 -------------------- 键盘绑定 --------------------
 
 -- 关闭默认键位
-config.disable_default_key_bindings = false
+config.disable_default_key_bindings = true
 
 local act = wezterm.action
 
