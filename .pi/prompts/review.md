@@ -1,2 +1,8 @@
-Review this code for bugs, security issues, and performance problems.
-Focus on: {{focus}}
+---
+description: Review staged git changes
+---
+Review the staged changes (`git diff --cached`). Focus on:
+
+- Bugs and logic errors
+- Security issues
+- Error handling gaps
