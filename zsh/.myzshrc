@@ -6,7 +6,6 @@ npm install -g @mariozechner/pi-coding-agent &>/dev/null &!
 brew update &>/dev/null &!
 
 # alias vi="nvim"
-alias vim="nvim"
 alias zd="zellij a -c default"
 alias zx="zoxide"
 
