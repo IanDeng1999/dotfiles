@@ -7,7 +7,9 @@ brew update &>/dev/null &!
 
 # alias vi="nvim"
 alias zd="zellij a -c default"
+alias zs="zellij a -c services"
 alias zx="zoxide"
+alias rmempty="find ./src -type d -empty -delete"
 
 export EDITOR=vim
 
