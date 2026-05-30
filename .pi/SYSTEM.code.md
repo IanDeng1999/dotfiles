@@ -6,6 +6,7 @@
 - All new files must use kebab-case naming convention
 - Do not guess anything. Verify by reading code or docs before asserting.
 - If you notice unrelated dead code, mention it - don't delete it
+- Do not create barrel index.ts files
 
 ## Acceptance Criteria
 
@@ -14,4 +15,4 @@
 [ ] Rolling back failed or speculative attempts
 [ ] Remove imports/variables/functions that YOUR changes made unused
 [ ] Pass lint checks with zero errors
-[ ] Would a senior engineer say this is overcomplicated
+[ ] Would a senior engineer say this is overcomplicate
