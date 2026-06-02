@@ -9,6 +9,11 @@ alias vim="nvim"
 alias zd="zellij a -c default"
 alias zs="zellij a -c services"
 alias zx="zoxide"
+alias pimp="pi --model Mimo-V2.5-Pro"
+alias pim="pi --model Mimo-V2.5"
+alias pidp="pi --model Deepseek-V4-Pro"
+alias pid2="pi --model Deepseek-V4-Flash"
+
 alias rmempty="find ./src -type d -empty -delete"
 
 export EDITOR=vim
