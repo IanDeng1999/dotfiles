@@ -58,15 +58,23 @@ config.keys = {{
         domain = 'CurrentPaneDomain'
     }
 }, {
+    key = 'n',
+    mods = 'LEADER',
+    action = act.SpawnTab 'DefaultDomain'
+}, {
     key = 'v',
     mods = 'CTRL|SHIFT',
     action = act.PasteFrom("Clipboard")
 }, {
     key = 'w',
-    mods = 'CTRL',
+    mods = 'LEADER',
     action = act.CloseCurrentTab {
         confirm = false
     }
+}, {
+    key = '`',
+    mods = 'CTRL',
+    action = act.ActivateTabRelative(1)
 }}
 
 -------------------- 鼠标绑定 --------------------
