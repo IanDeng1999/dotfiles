@@ -7,7 +7,7 @@ local config = wezterm.config_builder()
 
 -- config.color_scheme = 'Aurora'
 
-config.color_scheme = 'Whimsy'
+config.color_scheme = 'Flatland'
 config.window_decorations = "TITLE | RESIZE"
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = true
