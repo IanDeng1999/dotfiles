@@ -6,8 +6,7 @@ npm install -g @mariozechner/pi-coding-agent &>/dev/null &!
 brew update &>/dev/null &!
 
 alias vim="nvim"
-alias zd="zellij a -c default"
-alias zs="zellij a -c services"
+alias hd="herdr"
 alias zx="zoxide"
 alias pixmp="pi --model xiaomi/Mimo-V2.5-Pro"
 alias pixm="pi --model xiaomi/Mimo-V2.5"
@@ -20,32 +19,3 @@ alias rmempty="find ./src -type d -empty -delete"
 
 export EDITOR=vim
 
-if ! command -v x &> /dev/null; then
-  echo "未找到 x-cmd 命令，正在自动安装..."
-  eval "$(curl https://get.x-cmd.com)"
-fi
-
-AUTO_INSTALL_X_CMDS=(
-    zellij
-    zoxide
-    yazi
-    lazygit
-    fzf
-)
-
-install_missing_apps() {
-    local missing=()
-    for app in "${AUTO_INSTALL_X_CMDS[@]}"; do
-        if ! command -v "$app" &> /dev/null; then
-            missing+=("$app")
-        fi
-    done
-
-    if [ ${#missing[@]} -gt 0 ]; then
-        echo "Missing tools: ${missing[*]}"
-        echo "Installing..."
-        x env use "${missing[@]}"
-    fi
-}
-
-install_missing_apps
