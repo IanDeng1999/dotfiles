@@ -2,7 +2,7 @@
 # PREFIX: Ctrl+;  (Ctrl + Semicolon)
 
 [keys]
-prefix = "ctrl+;"
+prefix = "ctrl+k"
 
 [terminal]
 default_shell = ""
