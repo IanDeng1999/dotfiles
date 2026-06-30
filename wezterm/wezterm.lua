@@ -14,12 +14,12 @@ config.show_tab_index_in_tab_bar = true
 config.hide_tab_bar_if_only_one_tab = false
 
 config.inactive_pane_hsb = {
-	saturation = 0.9,
-	brightness = 0.8,
+    saturation = 0.9,
+    brightness = 0.8
 }
 
 -- 设置字体和窗口大小
-config.font = wezterm.font_with_fallback({ "JetBrainsMono Nerd Font", "Noto Sans CJK SC" })
+config.font = wezterm.font_with_fallback({"JetBrainsMono Nerd Font", "Noto Sans CJK SC"})
 config.font_size = 12
 config.initial_cols = 80
 config.initial_rows = 20
@@ -35,78 +35,68 @@ config.disable_default_key_bindings = true
 local act = wezterm.action
 
 config.leader = {
-	key = "'",
-	mods = "CTRL",
-	timeout_milliseconds = 1000,
+    key = "'",
+    mods = "CTRL",
+    timeout_milliseconds = 1000
 }
 
-config.keys = {
-	{
-		key = "c",
-		mods = "CTRL|SHIFT",
-		action = act.CopyTo("Clipboard"),
-	},
-	{
-		key = "v",
-		mods = "LEADER",
-		action = act.SplitHorizontal({
-			domain = "CurrentPaneDomain",
-		}),
-	},
-	{
-		key = "-",
-		mods = "LEADER",
-		action = act.SplitVertical({
-			domain = "CurrentPaneDomain",
-		}),
-	},
-	{
-		key = "n",
-		mods = "LEADER",
-		action = act.SpawnTab("DefaultDomain"),
-	},
-	{
-		key = "v",
-		mods = "CTRL|SHIFT",
-		action = act.PasteFrom("Clipboard"),
-	},
-	{
-		key = "w",
-		mods = "LEADER",
-		action = act.CloseCurrentTab({
-			confirm = false,
-		}),
-	},
-	{
-		key = "`",
-		mods = "CTRL",
-		action = act.ActivateTabRelative(1),
-	},
-}
+config.keys = {{
+    key = "c",
+    mods = "CTRL|SHIFT",
+    action = act.CopyTo("Clipboard")
+}, {
+    key = "v",
+    mods = "LEADER",
+    action = act.SplitHorizontal({
+        domain = "CurrentPaneDomain"
+    })
+}, {
+    key = "-",
+    mods = "LEADER",
+    action = act.SplitVertical({
+        domain = "CurrentPaneDomain"
+    })
+}, {
+    key = "n",
+    mods = "LEADER",
+    action = act.SpawnTab("DefaultDomain")
+}, {
+    key = "v",
+    mods = "CTRL|SHIFT",
+    action = act.PasteFrom("Clipboard")
+}, {
+    key = "w",
+    mods = "LEADER",
+    action = act.CloseCurrentTab({
+        confirm = false
+    })
+}, {
+    key = "`",
+    mods = "CTRL",
+    action = act.ActivateTabRelative(1)
+}}
 
 -------------------- 鼠标绑定 --------------------
 
-config.mouse_bindings = {
-	{
-		event = {
-			Up = {
-				streak = 1,
-				button = "Left",
-			},
-		},
-		mods = "NONE",
-		action = act.CompleteSelection("ClipboardAndPrimarySelection"),
-	}, -- Open HyperLink
-	{
-		event = {
-			Up = {
-				streak = 1,
-				button = "Left",
-			},
-		},
-		mods = "CTRL",
-		action = act.OpenLinkAtMouseCursor,
-	},
-}
+config.mouse_bindings = {{
+    event = {
+        Up = {
+            streak = 1,
+            button = "Left"
+        }
+    },
+    mods = "NONE",
+    action = act.CompleteSelection("ClipboardAndPrimarySelection")
+}, -- Open HyperLink
+{
+    event = {
+        Up = {
+            streak = 1,
+            button = "Left"
+        }
+    },
+    mods = "CTRL",
+    action = act.OpenLinkAtMouseCursor
+}}
 
 return config
