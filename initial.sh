@@ -1,4 +1,3 @@
-ln -sf "$(pwd)/nvim" ~/.config
 ln -sf "$(pwd)/wezterm" ~/.config
 ln -sf "$(pwd)/zellij" ~/.config
 ln -sf "$(pwd)/herdr" ~/.config
