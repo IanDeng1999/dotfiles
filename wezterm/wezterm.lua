@@ -65,7 +65,7 @@ config.keys = {{
     mods = "CTRL|SHIFT",
     action = act.PasteFrom("Clipboard")
 }, {
-    key = "w",
+    key = "x",
     mods = "LEADER",
     action = act.CloseCurrentTab({
         confirm = false
