@@ -5,7 +5,7 @@ local config = wezterm.config_builder()
 
 -------------------- 颜色配置 --------------------
 
-config.color_scheme = "Decaf (base16)"
+config.color_scheme = "Poimandres"
 
 config.window_decorations = "TITLE | RESIZE"
 config.use_fancy_tab_bar = false

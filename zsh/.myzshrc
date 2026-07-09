@@ -2,8 +2,6 @@
 # socat TCP-LISTEN:3001,bind=127.0.0.1,fork TCP:x.x.x.x:3001
 
 # Background tasks on startup (silent)
-npm install -g @mariozechner/pi-coding-agent &>/dev/null &!
-brew update &>/dev/null &!
 
 alias vim="nvim"
 alias hd="herdr"
