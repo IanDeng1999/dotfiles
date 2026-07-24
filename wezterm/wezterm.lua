@@ -19,7 +19,7 @@ config.inactive_pane_hsb = {
 }
 
 -- 设置字体和窗口大小
-config.font = wezterm.font_with_fallback({"JetBrainsMono Nerd Font", "Noto Sans CJK SC"})
+config.font = wezterm.font_with_fallback({"FiraCode Nerd Font", "JetBrainsMono Nerd Font", "Noto Sans CJK SC"})
 config.font_size = 12
 config.initial_cols = 80
 config.initial_rows = 20
