@@ -5,13 +5,7 @@
 
 alias vim="nvim"
 alias hd="herdr"
-alias zx="zoxide"
-alias pixmp="pi --model xiaomi/Mimo-V2.5-Pro"
-alias pixm="pi --model xiaomi/Mimo-V2.5"
-alias pidsp="pi --model deepseek/deepseek-v4-pro"
-alias pids="pi --model deepseek/deepseek-v4-flash"
-alias pidb="pi --model doubao/doubao-seed-2-0-lite-260428"
-alias pidbm="pi --model doubao/doubao-seed-2-0-mini-260428"
+alias p="pi update && pi"
 
 alias rmempty="find ./src -type d -empty -delete"
 
