@@ -1,18 +1,18 @@
 {
   "features": {
-    "editor": false,
+    "editor": true,
     "copyFriendly": false,
     "viewportIndicators": true,
     "statusLine": true
   },
   "icons": {
-    "mode": "nerd"
+    "mode": "auto"
   },
   "separator": "none",
   "colorSources": {
     "editor": "theme",
     "userMessages": "theme",
-    "starship": "theme"
+    "starship": "terminal"
   },
   "editorBorderColorMode": "static",
   "editorModelLabel": "id",
