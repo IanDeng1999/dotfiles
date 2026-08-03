@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-DOTBOT_DIR=".dotbot"
-DOTBOT_BIN="${DOTBOT_DIR}/bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-"${BASEDIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -b "${BASEDIR}" -c "${BASEDIR}/install.conf.yaml"
