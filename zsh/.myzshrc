@@ -5,7 +5,7 @@
 
 alias vim="nvim"
 alias hd="herdr"
-alias p="pi update && pi"
+alias p="pi update && pi update --extensions && pi"
 
 alias rmempty="find ./src -type d -empty -delete"
 
