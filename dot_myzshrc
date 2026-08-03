@@ -10,4 +10,3 @@ alias p="pi update && pi update --extensions && pi"
 alias rmempty="find ./src -type d -empty -delete"
 
 export EDITOR=vim
-
