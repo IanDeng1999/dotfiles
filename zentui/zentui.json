@@ -1,0 +1,57 @@
+{
+  "features": {
+    "editor": false,
+    "copyFriendly": false,
+    "viewportIndicators": true,
+    "statusLine": true
+  },
+  "icons": {
+    "mode": "nerd"
+  },
+  "separator": "none",
+  "colorSources": {
+    "editor": "theme",
+    "userMessages": "theme",
+    "starship": "theme"
+  },
+  "editorBorderColorMode": "static",
+  "editorModelLabel": "id",
+  "fixedEditor": {
+    "enabled": false
+  },
+  "responsiveFooter": true,
+  "compactFooterMaxLines": 1,
+  "contextStyle": "text",
+  "pathDisplay": {
+    "mode": "basename",
+    "depth": 0
+  },
+  "footerSegments": {
+    "cwd": false,
+    "cost": true,
+    "sessionDuration": false,
+    "tokens": true,
+    "context": true,
+    "modelInfo": false,
+    "runtime": false,
+    "sessionName": false,
+    "gitStatus": true,
+    "gitCounts": false,
+    "gitCommit": false,
+    "gitMetrics": true
+  },
+  "gitBranch": {
+    "maxLength": "full"
+  },
+  "gitCommit": {
+    "onlyDetached": true,
+    "showTag": true
+  },
+  "gitMetrics": {
+    "onlyNonzero": true,
+    "ignoreSubmodules": false
+  },
+  "extensionStatuses": {
+    "defaultPlacement": "right"
+  }
+}
