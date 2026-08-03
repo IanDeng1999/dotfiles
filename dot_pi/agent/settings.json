@@ -15,7 +15,7 @@
   "packages": [
     "npm:pi-chrome",
     "npm:pi-cc-header",
-    "npm:alps-pi"
+    "npm:pi-zentui"
   ],
   "theme": "dark",
   "quietStartup": true,
