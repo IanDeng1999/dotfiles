@@ -5,6 +5,9 @@ Include "/Users/bytedance/Library/Application Support/cloudide-cli/*/ssh.d/*"
 # -- Byted IDE injection begin --
 Include /Users/bytedance/.byted-ide/ssh_config
 # -- injection end --
+
+# Custom includes (must be before Host blocks)
+Include myconfig
   
 Host 107.175.62.143
     HostName 107.175.62.143
@@ -35,5 +38,3 @@ Host rcroot
 Host rc
     HostName 107.175.62.143
     User dev
-
-Include myconfig
