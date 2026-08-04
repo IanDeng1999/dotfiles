@@ -30,22 +30,7 @@ Host rc
     HostName 107.175.62.143
     User dev
 
-Host lxyroot
-    HostName 103.52.152.47
-    User root
-
-Host lxy
-    HostName 103.52.152.47
-    User deploy
-    IdentityFile ~/.ssh/id_ed25519
-
-Host lxy1root
-    HostName 38.76.185.158
-    User root
-
-Host lxy1
-    HostName 38.76.185.158
-    User deploy
+Include ~/.ssh/lxy
 
 # Company hosts (only on company computers)
 {{- if eq .chezmoi.os "darwin" }}
