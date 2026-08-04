@@ -27,22 +27,6 @@ Host *.byted.org
 
 Host db
     HostName 10.37.17.67
-    User dengguiyang
-
-Host jfy
-    HostName 120.220.73.200
-    Port 49922
-    User root
-
-Host hsy
-    HostName 45.207.194.77
-    User dev
-
-Host yhy
-  HostName 103.236.97.252
-  Port 55797
-  User root
-  IdentityFile ~/.ssh/id_ed25519
 
 Host rcroot
     HostName 107.175.62.143
@@ -52,20 +36,4 @@ Host rc
     HostName 107.175.62.143
     User dev
 
-Host lxyroot
-    HostName 103.52.152.47
-    User root
-
-Host lxy
-    HostName 103.52.152.47
-    User deploy
-    IdentityFile ~/.ssh/id_ed25519
-
-Host lxy1root
-    HostName 38.76.185.158
-    User root
-
-Host lxy1
-    HostName 38.76.185.158
-    User deploy
-
+Include myconfig
