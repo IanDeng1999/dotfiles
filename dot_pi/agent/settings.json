@@ -11,7 +11,7 @@
   "defaultProvider": "xiaomi",
   "defaultModel": "mimo-v2.5",
   "lastChangelogVersion": "0.83.0",
-  "defaultThinkingLevel": "high",
+  "defaultThinkingLevel": "medium",
   "packages": [
     "npm:pi-chrome",
     "npm:pi-cc-header",
