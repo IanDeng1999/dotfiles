@@ -1,18 +1,10 @@
-Host rcroot
-    HostName 107.175.62.143
-    User root
-
-Host rc
-    HostName 107.175.62.143
-    User dev
-
 Host lxyroot
     HostName 103.52.152.47
     User root
 
 Host lxy
     HostName 103.52.152.47
-    User deploy
+    User ian
 
 Host jjy
     HostName 210.16.163.118
