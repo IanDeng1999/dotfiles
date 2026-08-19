@@ -6,6 +6,11 @@ Host lxy
     HostName 103.52.152.47
     User ian
 
+Host sad
+    HostName 160.202.238.53
+    Port 10253
+    User ian
+
 Host jjy
     HostName 210.16.163.118
     Port 43472

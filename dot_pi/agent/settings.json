@@ -10,8 +10,8 @@
   "collapseChangelog": true,
   "defaultProvider": "xiaomi",
   "defaultModel": "mimo-v2.5",
-  "lastChangelogVersion": "0.84.1",
-  "defaultThinkingLevel": "medium",
+  "lastChangelogVersion": "0.84.2",
+  "defaultThinkingLevel": "high",
   "packages": [
     "npm:pi-chrome",
     "npm:pi-cc-header",
