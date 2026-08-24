@@ -1,6 +1,6 @@
 Host lxy
     HostName 103.52.152.47
-    Port 22
+    Port 65535
     User ian
     IdentityFile ~/.ssh/server_key
 
