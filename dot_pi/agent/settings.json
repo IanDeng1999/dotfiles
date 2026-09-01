@@ -10,7 +10,7 @@
   "collapseChangelog": true,
   "defaultProvider": "xiaomi",
   "defaultModel": "mimo-v2.5",
-  "lastChangelogVersion": "0.84.2",
+  "lastChangelogVersion": "0.84.4",
   "defaultThinkingLevel": "medium",
   "packages": [
     "npm:pi-chrome",
@@ -31,5 +31,9 @@
     "sloganOn": true,
     "sloganColor": true,
     "disabled": false
-  }
+  },
+  "terminal": {
+    "showTerminalProgress": true
+  },
+  "tuiMode": "regular"
 }
