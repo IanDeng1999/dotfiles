@@ -15,7 +15,9 @@
   "packages": [
     "npm:pi-chrome",
     "npm:pi-cc-header",
-    "npm:pi-zentui"
+    "npm:pi-zentui",
+    "npm:pi-autosuggestions",
+    "npm:@pi-lab/input-history"
   ],
   "theme": "dark",
   "quietStartup": true,
