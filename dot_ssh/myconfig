@@ -5,7 +5,7 @@ Host lxy
     IdentityFile ~/.ssh/server_key
 
 Host sad
-    HostName 160.202.238.53
+    HostName 160.202.238.160
     Port 10250
     User ian
     IdentityFile ~/.ssh/server_key
