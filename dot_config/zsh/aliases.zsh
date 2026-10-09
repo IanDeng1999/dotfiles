@@ -1,11 +1,5 @@
-# Proxy
-# socat TCP-LISTEN:3001,bind=127.0.0.1,fork TCP:x.x.x.x:3001
 
-# Background tasks on startup (silent)
-
-export EDITOR=nvim
-
-alias hd="herdr"
+alias tmx="tmux attach -c 0"
 alias z="zoxide"
 alias vim="nvim"
 alias vi="nvim"
@@ -17,4 +11,3 @@ alias p="pi update && pi update --extensions && pi"
 alias pc="p \"commit and push\""
 
 alias rmempty="find ./src -type d -empty -delete"
-
