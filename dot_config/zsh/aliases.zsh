@@ -1,5 +1,5 @@
 
-alias tmx="tmux attach -c 0"
+alias t='tmux new-session -A -s main'
 alias z="zoxide"
 alias vim="nvim"
 alias vi="nvim"
