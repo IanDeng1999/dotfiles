@@ -5,7 +5,7 @@ alias vi="nvim"
 
 alias ms='tmux new-session -A -s main'
 alias ds='tmux new-session -A -s dev'
-alias ss='tmux new-session -A -s dev'
+alias ss='tmux new-session -A -s services'
 
 alias crd="chezmoi re-add"
 alias ca="chezmoi apply"
