@@ -1,8 +1,11 @@
 
-alias t='tmux new-session -A -s main'
 alias z="zoxide"
 alias vim="nvim"
 alias vi="nvim"
+
+alias ms='tmux new-session -A -s main'
+alias ds='tmux new-session -A -s dev'
+alias ss='tmux new-session -A -s dev'
 
 alias crd="chezmoi re-add"
 alias ca="chezmoi apply"
