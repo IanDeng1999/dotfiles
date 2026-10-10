@@ -45,13 +45,13 @@ config.keys = {{
     mods = "CTRL|SHIFT",
     action = act.CopyTo("Clipboard")
 }, {
-    key = "\'",
+    key = "-",
     mods = "LEADER",
     action = act.SplitHorizontal({
         domain = "CurrentPaneDomain"
     })
 }, {
-    key = ";",
+    key = "v",
     mods = "LEADER",
     action = act.SplitVertical({
         domain = "CurrentPaneDomain"

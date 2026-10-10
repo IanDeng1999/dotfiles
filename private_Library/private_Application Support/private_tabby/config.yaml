@@ -44,8 +44,7 @@ hotkeys:
   profile-selectors: {}
   toggle-fullscreen: []
   close-tab:
-    - - Ctrl-'
-      - Q
+    - Ctrl-W
   reopen-tab: []
   toggle-last-tab: []
   rename-tab:
@@ -83,12 +82,8 @@ hotkeys:
   tab-18: []
   tab-19: []
   tab-20: []
-  split-right:
-    - - Ctrl-'
-      - ''''
-  split-bottom:
-    - - Ctrl-'
-      - ;
+  split-right: []
+  split-bottom: []
   split-left: []
   split-top: []
   pane-nav-right: []
@@ -107,9 +102,7 @@ hotkeys:
   pane-nav-8: []
   pane-nav-9: []
   pane-maximize: []
-  close-pane:
-    - - Ctrl-'
-      - X
+  close-pane: []
   pane-increase-vertical: []
   pane-decrease-vertical: []
   pane-increase-horizontal: []
