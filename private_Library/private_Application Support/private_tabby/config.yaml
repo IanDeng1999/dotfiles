@@ -1,0 +1,208 @@
+version: 8
+groups: []
+configSync:
+  parts: {}
+hotkeys:
+  toggle-window: []
+  copy-current-path: []
+  ctrl-c: []
+  copy: []
+  paste: []
+  clear: []
+  select-all: []
+  zoom-in: []
+  zoom-out: []
+  reset-zoom: []
+  home: []
+  end: []
+  previous-word: []
+  next-word: []
+  delete-previous-word: []
+  delete-line: []
+  delete-next-word: []
+  search: []
+  pane-focus-all: []
+  focus-all-tabs: []
+  scroll-to-top: []
+  scroll-up: []
+  scroll-down: []
+  scroll-to-bottom: []
+  restart-telnet-session: []
+  restart-ssh-session: []
+  launch-winscp: []
+  settings-tab: {}
+  settings: []
+  serial: []
+  restart-serial-session: []
+  new-tab:
+    - - Ctrl-'
+      - 'N'
+  new-window: []
+  profile: {}
+  profile-selectors: {}
+  toggle-fullscreen: []
+  close-tab:
+    - - Ctrl-'
+      - X
+  reopen-tab: []
+  toggle-last-tab: []
+  rename-tab:
+    - - Ctrl-'
+      - R
+  next-tab:
+    - Ctrl-`
+  previous-tab: []
+  move-tab-left: []
+  move-tab-right: []
+  rearrange-panes: []
+  tab-1: []
+  tab-2: []
+  tab-3: []
+  tab-4: []
+  tab-5: []
+  tab-6: []
+  tab-7: []
+  tab-8: []
+  tab-9: []
+  tab-10: []
+  duplicate-tab: []
+  restart-tab: []
+  reconnect-tab: []
+  disconnect-tab: []
+  explode-tab: []
+  combine-tabs: []
+  tab-11: []
+  tab-12: []
+  tab-13: []
+  tab-14: []
+  tab-15: []
+  tab-16: []
+  tab-17: []
+  tab-18: []
+  tab-19: []
+  tab-20: []
+  split-right:
+    - - Ctrl-'
+      - ;
+  split-bottom:
+    - - Ctrl-'
+      - ''''
+  split-left: []
+  split-top: []
+  pane-nav-right: []
+  pane-nav-down: []
+  pane-nav-up: []
+  pane-nav-left: []
+  pane-nav-previous: []
+  pane-nav-next: []
+  pane-nav-1: []
+  pane-nav-2: []
+  pane-nav-3: []
+  pane-nav-4: []
+  pane-nav-5: []
+  pane-nav-6: []
+  pane-nav-7: []
+  pane-nav-8: []
+  pane-nav-9: []
+  pane-maximize: []
+  close-pane: []
+  pane-increase-vertical: []
+  pane-decrease-vertical: []
+  pane-increase-horizontal: []
+  pane-decrease-horizontal: []
+  profile-selector: []
+  switch-profile: []
+  command-selector: []
+  scroll-page-up: []
+  scroll-page-down: []
+  group-selectors: {}
+  debug-save-state: []
+  debug-load-state: []
+  debug-copy-state: []
+  debug-paste-state: []
+  debug-save-output: []
+  debug-load-output: []
+  debug-copy-output: []
+  debug-paste-output: []
+  open-sftp: []
+  pin-tab: []
+  insert-new-line: []
+  next-mru-tab: []
+  previous-mru-tab: []
+  switch-meta-option: []
+terminal:
+  searchOptions: {}
+  colorScheme:
+    name: Floraverse
+    foreground: '#dbd1b9'
+    background: '#0e0d15'
+    cursor: '#bbbbbb'
+    colors:
+      - '#08002e'
+      - '#64002c'
+      - '#5d731a'
+      - '#cd751c'
+      - '#1d6da1'
+      - '#b7077e'
+      - '#42a38c'
+      - '#f3e0b8'
+      - '#331e4d'
+      - '#d02063'
+      - '#b4ce59'
+      - '#fac357'
+      - '#40a4cf'
+      - '#f12aae'
+      - '#62caa8'
+      - '#fff5db'
+  lightColorScheme:
+    name: Tabby Default Light
+    foreground: '#4d4d4c'
+    background: '#ffffff'
+    cursor: '#4d4d4c'
+    colors:
+      - '#000000'
+      - '#c82829'
+      - '#718c00'
+      - '#eab700'
+      - '#4271ae'
+      - '#8959a8'
+      - '#3e999f'
+      - '#ffffff'
+      - '#000000'
+      - '#c82829'
+      - '#718c00'
+      - '#eab700'
+      - '#4271ae'
+      - '#8959a8'
+      - '#3e999f'
+      - '#ffffff'
+  customColorSchemes: []
+  ligatures: true
+  font: Map
+  fontSize: 12
+  copyAsHTML: false
+  warnOnMultilinePaste: false
+  copyOnSelect: true
+clickableLinks:
+  modifier: metaKey
+accessibility:
+  animations: false
+appearance:
+  spaciness: 1.2
+  vibrancy: true
+  tabsInFullscreen: true
+hacks: {}
+providerBlacklist: []
+commandBlacklist: []
+profileDefaults:
+  ssh:
+    disableDynamicTitle: true
+profileBlacklist: []
+language: zh-CN
+enableWelcomeTab: false
+pluginBlacklist: []
+ssh: {}
+profiles: []
+enableAnalytics: false
+enableAutomaticUpdates: false
+recoverTabs: false
