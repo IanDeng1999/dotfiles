@@ -174,7 +174,6 @@ terminal:
       - '#3e999f'
       - '#ffffff'
   customColorSchemes: []
-  ligatures: true
   font: FiraCode Nerd Font
   copyAsHTML: false
   warnOnMultilinePaste: false
