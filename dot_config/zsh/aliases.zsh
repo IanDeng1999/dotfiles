@@ -4,7 +4,7 @@ alias vim="nvim"
 alias vi="nvim"
 
 alias ms='tmux new-session -A -s main'
-alias ds='tmux new-session -A -s dev'
+alias cs='tmux new-session -A -s coding'
 alias ss='tmux new-session -A -s services'
 alias tls='tmux ls'
 
