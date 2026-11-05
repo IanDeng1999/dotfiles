@@ -1,6 +1,12 @@
 # zsh plugin manager
-source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
-autoload -Uz _zinit
+_zinit_file="$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+if [[ -r "$_zinit_file" ]]; then
+  source "$_zinit_file"
+  autoload -Uz _zinit
+else
+  return 0
+fi
+unset _zinit_file
 
 # super smart autocompletions
 # curl -fsSL https://raw.githubusercontent.com/Giammarco-Ferranti/deja/main/install.sh | sh
