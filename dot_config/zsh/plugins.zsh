@@ -3,6 +3,7 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 
 # super smart autocompletions
+# curl -fsSL https://raw.githubusercontent.com/Giammarco-Ferranti/deja/main/install.sh | sh
 zinit ice wait"0" lucid depth=1 pick"deja.plugin.zsh"
 zinit light Giammarco-Ferranti/deja
 
