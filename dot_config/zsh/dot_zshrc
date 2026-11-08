@@ -1,12 +1,10 @@
+export PATH="$HOME/.local/bin:$PATH"
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 
 # Proxy
-# socat TCP-LISTEN:3001,bind=127.0.0.1,fork TCP:x.x.x.x:3001
 
 export EDITOR=nvim
 
@@ -14,10 +12,50 @@ export EDITOR=nvim
 source "$ZDOTDIR/.zshenv"
 
 # plugins & plugin manager
-source "$ZDOTDIR/plugins.zsh"
+_zinit_file="$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+if [[ -r "$_zinit_file" ]]; then
+  source "$_zinit_file"
+  autoload -Uz _zinit
+else
+  return 0
+fi
+unset _zinit_file
+
+# super smart autocompletions
+# curl -fsSL https://raw.githubusercontent.com/Giammarco-Ferranti/deja/main/install.sh | sh
+zinit ice wait"0" lucid depth=1 pick"deja.plugin.zsh"
+zinit light Giammarco-Ferranti/deja# deja overrides
+export DEJA_ACCEPT_KEY=^l
+export DEJA_CYCLE_KEY=^N
+export DEJA_CYCLE_FUZZY_KEY=
+export DEJA_CYCLE_FUZZY_BACK_KEY=
+export DEJA_TOGGLE_EMPTY_KEY=
+
+# syntax highlighting
+zinit light zsh-users/zsh-syntax-highlighting
+
+# pretty prompt
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+
 
 # aliases
-source "$ZDOTDIR/aliases.zsh"
+# socat TCP-LISTEN:3001,bind=127.0.0.1,fork TCP:x.x.x.x:3001
+alias z="zoxide"
+alias vim="nvim"
+alias vi="nvim"
+
+alias ms='tmux new-session -A -s main'
+alias cs='tmux new-session -A -s coding'
+alias ss='tmux new-session -A -s services'
+alias tls='tmux ls'
+
+alias crd="chezmoi re-add"
+alias ca="chezmoi apply"
+
+alias p="pi update && pi update --extensions && pi"
+alias pc="p \"commit and push\""
+
+alias rmempty="find ./src -type d -empty -delete"
 
 # ~/.zshrc
 source "$HOME/.zshrc"
